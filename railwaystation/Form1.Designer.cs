@@ -30,8 +30,11 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ZFA = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.ZDA = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -51,18 +54,18 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(784, 62);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "GD,10,1,0;DC,57,1,0;ZC,60,1,2;DC,133,1,1;ZC,110,1,3;ZC,35,2,0;GD,85,2,0;ZC,135,2," +
-    "1";
+            this.textBox1.Text = "GD,50,1,0;DC,0,1,0;ZC,10,1,3;GD,100,1,0;DC,0,1,1;ZC,10,1,2;GD,40,1,0;GD,90,2,0;ZC" +
+    ",10,2,1;GD,20,2,0;ZC,10,2,0;GD,80,2,0";
             // 
-            // button2
+            // ZFA
             // 
-            this.button2.Location = new System.Drawing.Point(1160, 575);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 62);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "测试按钮2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ZFA.Location = new System.Drawing.Point(1160, 575);
+            this.ZFA.Name = "ZFA";
+            this.ZFA.Size = new System.Drawing.Size(114, 62);
+            this.ZFA.TabIndex = 2;
+            this.ZFA.Text = "测试按钮2";
+            this.ZFA.UseVisualStyleBackColor = true;
+            this.ZFA.Click += new System.EventHandler(this.ZFA_Click);
             // 
             // textBox2
             // 
@@ -72,16 +75,49 @@
             this.textBox2.Size = new System.Drawing.Size(100, 62);
             this.textBox2.TabIndex = 3;
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(1344, 712);
+            this.shapeContainer1.TabIndex = 4;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.White;
+            this.lineShape1.BorderWidth = 5;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 1250;
+            this.lineShape1.X2 = 1325;
+            this.lineShape1.Y1 = 19;
+            this.lineShape1.Y2 = 19;
+            // 
+            // ZDA
+            // 
+            this.ZDA.Location = new System.Drawing.Point(1160, 486);
+            this.ZDA.Name = "ZDA";
+            this.ZDA.Size = new System.Drawing.Size(114, 62);
+            this.ZDA.TabIndex = 5;
+            this.ZDA.Text = "测试按钮1";
+            this.ZDA.UseVisualStyleBackColor = true;
+            this.ZDA.Click += new System.EventHandler(this.ZDA_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1344, 712);
+            this.Controls.Add(this.ZDA);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ZFA);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -96,8 +132,11 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ZFA;
         private System.Windows.Forms.TextBox textBox2;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Button ZDA;
     }
 }
 
